@@ -20,7 +20,7 @@ class HabitTile extends StatelessWidget {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return Padding(
-      padding: EdgeInsets.all(size.height * 0.03),
+      padding: EdgeInsets.all(size.height * 0.015),
       child: Slidable(
         endActionPane: ActionPane(
           motion: const StretchMotion(),
@@ -43,7 +43,7 @@ class HabitTile extends StatelessWidget {
           ],
         ),
         child: Container(
-          padding: EdgeInsets.all(size.height * 0.03),
+          padding: EdgeInsets.all(size.height * 0.02),
           decoration: BoxDecoration(
             color: Colors.grey[100],
             borderRadius: BorderRadius.circular(8),

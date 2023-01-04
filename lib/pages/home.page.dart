@@ -12,11 +12,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   // data stracture for todays list
-  List todayHabitList = [
-    // [ habitName, habitcompleted]
-    ["Morning 1", false],
-    ["Morning 2", false],
-  ];
+  List todayHabitList = [];
 
   // checkboc was tapped
   void checkBoxTapped(bool? value, int index) {
