@@ -30,7 +30,7 @@ class MyAlertBox extends StatelessWidget {
       actions: [
         MaterialButton(
           onPressed: onSave,
-          color: Colors.grey,
+          color: Colors.green[300],
           child: const Text(
             'Save',
             style: TextStyle(color: Colors.white),
