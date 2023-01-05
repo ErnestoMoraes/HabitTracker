@@ -10,4 +10,9 @@ O aplicativo conta com permanência de dados graças a utilização do HIVE.
 
 ``` link: https://docs.hivedb.dev/#/ ```
 
-Foi um projeto de apenas 1 dia de trabalho.
+
+## Como Utilizar?
+ - Baixar o projeto
+ - Verificar se todos os critérios para rodar um aplicativo em Flutter estejam funcionando perfeitamente
+ - Debug o projeto...
+ - Pronto! O projeto já esta funcionando no seu dispositivo.
