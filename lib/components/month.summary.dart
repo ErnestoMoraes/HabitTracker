@@ -19,10 +19,12 @@ class MonthlySummary extends StatelessWidget {
     var size = MediaQuery.of(context).size;
     return Container(
       padding: EdgeInsets.only(
-          top: size.height * 0.015, bottom: size.height * 0.015),
+        top: size.height * 0.015,
+        bottom: size.height * 0.015,
+      ),
       child: HeatMap(
         startDate: createDateTimeObject(startDate),
-        endDate: DateTime.now().add(Duration(days: 0)),
+        endDate: DateTime.now().add(const Duration(days: 0)),
         datasets: datasets,
         colorMode: ColorMode.color,
         defaultColor: Colors.grey[200],
