@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:habittacker/components/habit.tile.dart';
+import 'package:habittacker/components/month.summary.dart';
 import 'package:habittacker/components/my.alert.box.dart';
 import 'package:habittacker/components/my.fab.dart';
 import 'package:habittacker/data/habit.database.dart';
@@ -114,17 +115,25 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Colors.grey[300],
       floatingActionButton: MyFloatingActionButton(onPressed: createNewHabit),
-      body: ListView.builder(
-        itemCount: db.todayHabitList.length,
-        itemBuilder: (context, index) {
-          return HabitTile(
-            habitName: db.todayHabitList[index][0],
-            habitCompleted: db.todayHabitList[index][1],
-            onChange: (value) => checkBoxTapped(value, index),
-            settingsTapped: (context) => openHabitSetting(index),
-            deleteTapped: (context) => deleteHabit(index),
-          );
-        },
+      body: ListView(
+        children: [
+          MonthlySummary(
+              datasets: db.heatMapDataSet, startDate: _myBox.get("START_DATE")),
+          ListView.builder(
+            shrinkWrap: true,
+            physics: const NeverScrollableScrollPhysics(),
+            itemCount: db.todayHabitList.length,
+            itemBuilder: (context, index) {
+              return HabitTile(
+                habitName: db.todayHabitList[index][0],
+                habitCompleted: db.todayHabitList[index][1],
+                onChange: (value) => checkBoxTapped(value, index),
+                settingsTapped: (context) => openHabitSetting(index),
+                deleteTapped: (context) => deleteHabit(index),
+              );
+            },
+          )
+        ],
       ),
     );
   }
