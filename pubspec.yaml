@@ -13,6 +13,22 @@ dependencies:
   hive: ^2.2.3
   hive_flutter: ^1.1.0
   flutter_heatmap_calendar: ^1.0.5
+  flutter_native_splash: ^2.0.4
+  flutter_launcher_icons: ^0.11.0
+
+flutter_native_splash:
+  color: "#02d808"
+  image: "assets/app/splash.png"
+  android: true
+  ios: true
+
+flutter_icons:
+  image_path: "assets/app/icon.png"
+  ios: true
+  remove_alpha_ios: true
+  android: "launcher_icon"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/app/icon-android.png"
 
 dev_dependencies:
   flutter_test:
