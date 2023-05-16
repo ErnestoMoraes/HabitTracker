@@ -66,11 +66,9 @@ Se você deseja contribuir para este projeto, siga as etapas abaixo:
 
 6. Abra um pull request no repositório original.
 
-## Licença
+## Nota Obrigatória!!!
 
-Este projeto está licenciado sob a [MIT License](https://opensource.org/licenses/MIT).
-
-> Divirta-se acompanhando e rastreando seus hábitos com o HabitTracker! Se tiver alguma dúvida ou encontrar algum problema, sinta-se à vontade para entrar em contato conosco.
+> Divirta-se acompanhando e rastreando seus hábitos com o HabitTracker! Se tiver alguma dúvida ou encontrar algum problema, sinta-se à vontade para entrar em contato comigo.
 
 <div align="center">
   <br/>
